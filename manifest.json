@@ -1,0 +1,9 @@
+{
+  "name":"Interview Assistant",
+  "short_name":"Interview AI",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f4f5f7",
+  "theme_color":"#111827",
+  "icons":[]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<link rel="manifest" href="manifest.json">
+<title>Interview Assistant</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f4f5f7;margin:0;color:#111827}
+main{max-width:720px;margin:auto;padding:18px}.card{background:white;border-radius:16px;padding:16px;margin:12px 0;box-shadow:0 2px 10px #0001}
+h1{font-size:26px;margin:5px 0}.status{color:#667085;font-size:14px}
+button{border:0;border-radius:12px;padding:12px 15px;margin:4px;background:#111827;color:white;font-weight:600}
+button.secondary{background:#e5e7eb;color:#111827}.danger{background:#b42318}
+textarea{width:100%;box-sizing:border-box;border:1px solid #d0d5dd;border-radius:10px;padding:12px;font:inherit;resize:vertical}
+.answer{white-space:pre-wrap;line-height:1.5}.small{font-size:12px;color:#667085}
+</style>
+</head>
+<body>
+<main>
+<div class="card">
+<h1>🎙 Interview Assistant</h1>
+<div id="status" class="status">Ready</div>
+</div>
+<div class="card">
+<button id="audio">🎙 Start Audio</button>
+<button id="generate">⚡ Generate Answer</button>
+<button class="secondary" id="copy">📋 Copy</button>
+<button class="secondary" id="clear">Clear</button>
+</div>
+<div class="card">
+<h3>Detected Question</h3>
+<textarea id="question" rows="6" placeholder="Speak or type the interview question..."></textarea>
+</div>
+<div class="card">
+<h3>⭐ Answer</h3>
+<div id="answer" class="answer">Answer will appear here.</div>
+</div>
+<div class="card">
+<h3>Settings</h3>
+<p class="small">For privacy, this starter uses a user-configured HTTPS AI endpoint. Do not put a secret API key into a public website.</p>
+<input id="endpoint" placeholder="HTTPS backend endpoint" style="width:100%;box-sizing:border-box;padding:11px;border:1px solid #d0d5dd;border-radius:10px">
+<button class="secondary" id="save">Save Endpoint</button>
+</div>
+<p class="small">Use only for practice/mock interviews or where assistance is explicitly permitted.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
